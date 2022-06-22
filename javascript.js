@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
 
 
 function weatherUpdate(searchResult){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchResult}&APPID=dcc04f824f06ac2b2f8a7d8bd6f54ea3&units=imperial`, {mode: 'cors'})
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchResult}&APPID=KEY&units=imperial`, {mode: 'cors'})
     .then(function(response) {
         return response.json();
     })
